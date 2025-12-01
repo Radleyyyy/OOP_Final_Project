@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace OOP_Final_Project
 {
@@ -25,21 +26,28 @@ namespace OOP_Final_Project
             form3.FormClosed += (s, args) => this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-        }
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             Return form4 = new Return();
             form4.Show();
             this.Hide();
             form4.FormClosed += (s, args) => this.Close();
+        }
+
+        private void History_Click(object sender, EventArgs e)
+        {
+            History form5 = new History();
+            form5.Show();
+            this.Hide();
+            form5.FormClosed += (s, args) => this.Close();
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+            form1.FormClosed += (s, args) => this.Close();
         }
     }
 }

@@ -32,11 +32,13 @@
             History = new Button();
             Return = new Button();
             Borrow = new Button();
+            Logout = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(Logout);
             groupBox1.Controls.Add(History);
             groupBox1.Controls.Add(Return);
             groupBox1.Controls.Add(Borrow);
@@ -48,16 +50,17 @@
             // 
             // History
             // 
-            History.Location = new Point(42, 268);
+            History.Location = new Point(42, 202);
             History.Name = "History";
             History.Size = new Size(181, 66);
             History.TabIndex = 2;
             History.Text = "History";
             History.UseVisualStyleBackColor = true;
+            History.Click += History_Click;
             // 
             // Return
             // 
-            Return.Location = new Point(44, 162);
+            Return.Location = new Point(42, 130);
             Return.Name = "Return";
             Return.Size = new Size(181, 66);
             Return.TabIndex = 1;
@@ -74,6 +77,16 @@
             Borrow.Text = "Borrow";
             Borrow.UseVisualStyleBackColor = true;
             Borrow.Click += button1_Click;
+            // 
+            // Logout
+            // 
+            Logout.Location = new Point(42, 274);
+            Logout.Name = "Logout";
+            Logout.Size = new Size(181, 66);
+            Logout.TabIndex = 3;
+            Logout.Text = "Log-out";
+            Logout.UseVisualStyleBackColor = true;
+            Logout.Click += Logout_Click;
             // 
             // Form2
             // 
@@ -93,5 +106,6 @@
         private Button History;
         private Button Return;
         private Button Borrow;
+        private Button Logout;
     }
 }

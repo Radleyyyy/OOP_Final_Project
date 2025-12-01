@@ -84,7 +84,7 @@
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(110, 94);
+            txtUsername.Location = new Point(110, 96);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(168, 23);
             txtUsername.TabIndex = 3;

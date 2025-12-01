@@ -31,6 +31,7 @@ namespace OOP_Final_Project
             form2.Show();
             this.Hide();
             form2.FormClosed += (s, args) => this.Close();
+            //idfjviouj
         }
     }
 }

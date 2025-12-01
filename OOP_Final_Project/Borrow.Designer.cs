@@ -39,12 +39,14 @@
             textBox1 = new TextBox();
             button1 = new Button();
             button6 = new Button();
+            label5 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.ActiveCaption;
+            groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(textBox3);
@@ -60,7 +62,6 @@
             groupBox1.Size = new Size(305, 431);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
             // 
             // label4
             // 
@@ -148,6 +149,16 @@
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(100, 19);
+            label5.Name = "label5";
+            label5.Size = new Size(112, 37);
+            label5.TabIndex = 15;
+            label5.Text = "Borrow";
+            // 
             // Borrow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -174,5 +185,6 @@
         private Label label2;
         private Label label1;
         private ComboBox comboBox1;
+        private Label label5;
     }
 }

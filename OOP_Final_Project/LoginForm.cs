@@ -1,8 +1,8 @@
 namespace OOP_Final_Project
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : Form
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace OOP_Final_Project
                 MessageBox.Show("Login Successful!", "Success",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                Form2 form2 = new Form2();
+                Selection form2 = new Selection();
                 form2.Show();
                 this.Hide();
                 form2.FormClosed += (s, args) => this.Close();

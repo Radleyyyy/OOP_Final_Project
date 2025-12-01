@@ -19,7 +19,7 @@ namespace OOP_Final_Project
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Selection form2 = new Selection();
             form2.Show();
             this.Hide();
             form2.FormClosed += (s, args) => this.Close();
@@ -27,7 +27,7 @@ namespace OOP_Final_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Selection form2 = new Selection();
             form2.Show();
             this.Hide();
             form2.FormClosed += (s, args) => this.Close();

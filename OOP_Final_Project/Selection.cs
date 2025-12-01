@@ -11,9 +11,9 @@ using static System.Windows.Forms.DataFormats;
 
 namespace OOP_Final_Project
 {
-    public partial class Form2 : Form
+    public partial class Selection : Form
     {
-        public Form2()
+        public Selection()
         {
             InitializeComponent();
         }
@@ -44,10 +44,15 @@ namespace OOP_Final_Project
 
         private void Logout_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            LoginForm form1 = new LoginForm();
             form1.Show();
             this.Hide();
             form1.FormClosed += (s, args) => this.Close();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

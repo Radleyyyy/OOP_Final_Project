@@ -25,7 +25,7 @@ namespace OOP_Final_Project
                 Form2 form2 = new Form2();
                 form2.Show();
                 this.Hide();
-                form2.FormClosed += (s, args) => this.Close();
+                
             }
             else
             {

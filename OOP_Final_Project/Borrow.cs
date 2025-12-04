@@ -22,7 +22,7 @@ namespace OOP_Final_Project
             Form2 form2 = new Form2();
             form2.Show();
             this.Hide();
-            form2.FormClosed += (s, args) => this.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace OOP_Final_Project
             Form2 form2 = new Form2();
             form2.Show();
             this.Hide();
-            form2.FormClosed += (s, args) => this.Close();
+            
             
         }
     }

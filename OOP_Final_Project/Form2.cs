@@ -23,7 +23,7 @@ namespace OOP_Final_Project
             Borrow form3 = new Borrow();
             form3.Show();
             this.Hide();
-            form3.FormClosed += (s, args) => this.Close();
+            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace OOP_Final_Project
             Return form4 = new Return();
             form4.Show();
             this.Hide();
-            form4.FormClosed += (s, args) => this.Close();
+            
         }
 
         private void History_Click(object sender, EventArgs e)

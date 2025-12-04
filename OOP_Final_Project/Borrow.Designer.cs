@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            dateTimePicker1 = new DateTimePicker();
+            label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            txtBoxQuantity = new TextBox();
             label2 = new Label();
             label1 = new Label();
             comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
+            textBoxUsername = new TextBox();
             button1 = new Button();
             button6 = new Button();
-            label5 = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.ActiveCaption;
+            groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtBoxQuantity);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(textBoxUsername);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(button6);
             groupBox1.Location = new Point(308, 7);
@@ -62,6 +62,23 @@
             groupBox1.Size = new Size(305, 431);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(88, 182);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 16;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(100, 19);
+            label5.Name = "label5";
+            label5.Size = new Size(112, 37);
+            label5.TabIndex = 15;
+            label5.Text = "Borrow";
             // 
             // label4
             // 
@@ -81,19 +98,12 @@
             label3.TabIndex = 13;
             label3.Text = "Quantity:";
             // 
-            // textBox3
+            // txtBoxQuantity
             // 
-            textBox3.Location = new Point(88, 182);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(151, 23);
-            textBox3.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(88, 153);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(151, 23);
-            textBox2.TabIndex = 9;
+            txtBoxQuantity.Location = new Point(88, 153);
+            txtBoxQuantity.Name = "txtBoxQuantity";
+            txtBoxQuantity.Size = new Size(200, 23);
+            txtBoxQuantity.TabIndex = 9;
             // 
             // label2
             // 
@@ -119,15 +129,15 @@
             comboBox1.Items.AddRange(new object[] { "Basket ball", "Soccer ball", "Volley ball", "Base ball", "Tennis ball" });
             comboBox1.Location = new Point(88, 124);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 23);
+            comboBox1.Size = new Size(200, 23);
             comboBox1.TabIndex = 9;
             // 
-            // textBox1
+            // textBoxUsername
             // 
-            textBox1.Location = new Point(88, 95);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 23);
-            textBox1.TabIndex = 8;
+            textBoxUsername.Location = new Point(88, 95);
+            textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.Size = new Size(200, 23);
+            textBoxUsername.TabIndex = 8;
             // 
             // button1
             // 
@@ -149,16 +159,6 @@
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(100, 19);
-            label5.Name = "label5";
-            label5.Size = new Size(112, 37);
-            label5.TabIndex = 15;
-            label5.Text = "Borrow";
-            // 
             // Borrow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -176,15 +176,15 @@
 
         private GroupBox groupBox1;
         private Button button6;
-        private TextBox textBox1;
+        private TextBox textBoxUsername;
         private Button button1;
         private Label label4;
         private Label label3;
-        private TextBox textBox3;
-        private TextBox textBox2;
+        private TextBox txtBoxQuantity;
         private Label label2;
         private Label label1;
         private ComboBox comboBox1;
         private Label label5;
+        private DateTimePicker dateTimePicker1;
     }
 }

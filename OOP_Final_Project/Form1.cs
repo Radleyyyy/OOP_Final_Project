@@ -1,7 +1,12 @@
+using SQLite;
 namespace OOP_Final_Project
 {
     public partial class Form1 : Form
     {
+        private string Username;
+        private string Password;
+
+       
         public Form1()
         {
             InitializeComponent();
@@ -14,10 +19,10 @@ namespace OOP_Final_Project
             string password = txtPassword.Text;
 
 
-            string correctUser = "admin";
-            string correctPass = "1234";
+            this.Username = "admin";
+            this.Password = "1234";
 
-            if (username == correctUser && password == correctPass)
+            if (this.Username == username && this.Password == password)
             {
                 MessageBox.Show("Login Successful!", "Success",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

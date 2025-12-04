@@ -29,46 +29,36 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            listBox1 = new ListBox();
+            dataGridView1 = new DataGridView();
             Ok = new Button();
+            label1 = new Label();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.ActiveCaption;
+            groupBox1.Controls.Add(dataGridView1);
             groupBox1.Controls.Add(Ok);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(listBox1);
             groupBox1.Location = new Point(55, 28);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(280, 343);
+            groupBox1.Size = new Size(539, 343);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             // 
-            // label1
+            // dataGridView1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(76, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(113, 37);
-            label1.TabIndex = 1;
-            label1.Text = "History";
-            // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(50, 81);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(198, 244);
-            listBox1.TabIndex = 0;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(19, 69);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(474, 191);
+            dataGridView1.TabIndex = 2;
             // 
             // Ok
             // 
-            Ok.Location = new Point(103, 261);
+            Ok.Location = new Point(205, 266);
             Ok.Name = "Ok";
             Ok.Size = new Size(68, 42);
             Ok.TabIndex = 1;
@@ -76,16 +66,27 @@
             Ok.UseVisualStyleBackColor = true;
             Ok.Click += Ok_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(182, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(113, 37);
+            label1.TabIndex = 1;
+            label1.Text = "History";
+            // 
             // History
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(458, 450);
+            ClientSize = new Size(789, 450);
             Controls.Add(groupBox1);
             Name = "History";
             Text = "History";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -93,7 +94,7 @@
 
         private GroupBox groupBox1;
         private Label label1;
-        private ListBox listBox1;
         private Button Ok;
+        private DataGridView dataGridView1;
     }
 }
